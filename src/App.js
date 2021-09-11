@@ -8,7 +8,7 @@ function App() {
         <div className="App">
             {data.map(item => {
                 return (
-                    <h1>{item.file_name}</h1>
+                    <img src={require(`./images/${item.file_name}`).default} alt="image goes here"/>
                 );
             })}
         </div>
