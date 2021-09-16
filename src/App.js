@@ -41,12 +41,12 @@ function App() {
             <br/>
             {liveData.map(item => {
                 return (
-                    <>
+                    <div key={item.id}>
                         <img className="image-container" src={require(`./images/${item.file_name}`).default} alt="image goes here"/>
                         <p>Title: {item.name}</p>
                         <p>Filename: {item.file_name}</p>
                         <p>Description: {item.description}</p>
-                    </>
+                    </div>
                 );
             })}
         </div>
