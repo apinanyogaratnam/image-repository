@@ -35,3 +35,10 @@ test('renders App Component and checks if count of description labels are accura
   const linkElement = screen.getAllByText(/Description:/i);
   expect(linkElement.length).toBe(10);
 });
+
+// testing number of filename labels
+test('renders App Component and checks if count of filename labels are accurate', () => {
+  render(<App />);
+  const linkElement = screen.getAllByText(/Filename:/i);
+  expect(linkElement.length).toBe(10);
+});
