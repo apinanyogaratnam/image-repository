@@ -8,7 +8,7 @@ function App() {
 
     const onSubmit = (e)  => {
         e.preventDefault();
-        console.log(e);
+        console.log(search);
     }
 
     return (
