@@ -1,14 +1,30 @@
 import './App.css';
 import data from './data.json';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
     const [search, setSearch] = useState('');
-    console.log(data);
+    const [liveData, setLiveData] = useState([]);
+
+    useEffect(() => {
+        setLiveData(data);
+        console.log(data);
+    }, [data]);
 
     const onSubmit = (e)  => {
         e.preventDefault();
         console.log(search);
+        
+        if (!search) {
+            alert("cannot leave search box blank");
+            return;
+        }
+
+        // filter images here
+
+        // set filtered images to liveData
+
+        setSearch('');
     }
 
     return (
@@ -19,7 +35,7 @@ function App() {
                 <input type="submit" value="Submit" />
             </form>
             <br/>
-            {data.map(item => {
+            {liveData.map(item => {
                 return (
                     <>
                         <img className="image-container" src={require(`./images/${item.file_name}`).default} alt="image goes here"/>
