@@ -8,7 +8,6 @@ function App() {
 
     useEffect(() => {
         setLiveData(data);
-        console.log(data);
     }, [data]);
 
     const onSubmit = (e)  => {
