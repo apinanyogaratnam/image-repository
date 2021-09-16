@@ -21,3 +21,10 @@ test('renders App component and checks if form is showing', () => {
   const linkElement = screen.getByRole('textbox');
   expect(linkElement).toBeInTheDocument();
 });
+
+// testing number of title labels
+test('renders App Component and checks if form is showing', async () => {
+  render(<App />);
+  const linkElement = screen.getAllByText(/Title:/i);
+  expect(linkElement.length).toBe(10);
+});
