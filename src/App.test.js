@@ -7,3 +7,10 @@ test('renders App component and checks title accuracy', () => {
   const linkElement = screen.getByText(/Image Repository/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+// testing search bar placeholder text
+test('renders App component and checks if search bar is showing placeholder text', () => {
+  render(<App />);
+  const linkElement = screen.getByPlaceholderText(/Search.../i);
+  expect(linkElement).toBeInTheDocument();
+});
