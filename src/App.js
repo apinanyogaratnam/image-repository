@@ -21,10 +21,15 @@ function App() {
         }
 
         // filter images here
-
-        // set filtered images to liveData
-
+        setLiveData(filter_by_search(search));
+        
         setSearch('');
+    }
+
+    const filter_by_search = (search_text) => {
+        return data.filter(image => {
+            return image.description.includes(search_text);
+        });
     }
 
     return (
@@ -33,6 +38,7 @@ function App() {
             <form onSubmit={onSubmit}>
                 <input className="search-box" type="text" value={search} placeholder="Search..." onChange={(e) => setSearch(e.target.value)} />
                 <input type="submit" value="Submit" />
+                <button>Reset</button>
             </form>
             <br/>
             {liveData.map(item => {
