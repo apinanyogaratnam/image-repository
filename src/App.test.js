@@ -14,3 +14,10 @@ test('renders App component and checks if search bar is showing placeholder text
   const linkElement = screen.getByPlaceholderText(/Search.../i);
   expect(linkElement).toBeInTheDocument();
 });
+
+// testing textbox existence
+test('renders App component and checks if form is showing', () => {
+  render(<App />);
+  const linkElement = screen.getByRole('textbox');
+  expect(linkElement).toBeInTheDocument();
+});
