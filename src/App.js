@@ -27,7 +27,7 @@ function App() {
 
     const filter_by_search = (search_text) => {
         return data.filter(image => {
-            return image.description.includes(search_text);
+            return image.description.includes(search_text) || image.name.includes(search_text);
         });
     }
 
