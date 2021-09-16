@@ -9,10 +9,13 @@ test('renders App component and checks title accuracy', () => {
 });
 
 // testing title label of each image
-test('renders App component and checks label accuracy', () => {
+test('renders App component and checks title label accuracy', () => {
   render(<App />);
   expect(screen.getByText(/Title:/i)).toBeInTheDocument();
 });
 
 // testing description label of each image
-
+test('renders App component and checks description label accuracy', () => {
+  render(<App />);
+  expect(screen.getByText(/Description:/i)).toBeInTheDocument();
+});
