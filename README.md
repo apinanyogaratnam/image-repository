@@ -12,3 +12,6 @@ This application is for the shopify internship application. It is a simple image
 type a keyword such as `snow` or `mountain` and a list of images related 
 to `snow` or `mountain` will be displayed. Clicking enter on an empty
 search box will result in all the images appearing again.
+
+# How to test
+1. run `npm test`
