@@ -23,6 +23,7 @@ function App() {
         // filter images here
         setLiveData(filter_by_search(search));
         
+        // set search to empty string
         setSearch('');
     }
 
