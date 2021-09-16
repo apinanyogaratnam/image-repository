@@ -23,8 +23,15 @@ test('renders App component and checks if form is showing', () => {
 });
 
 // testing number of title labels
-test('renders App Component and checks if form is showing', async () => {
+test('renders App Component and checks if count of title labels are accurate', async () => {
   render(<App />);
   const linkElement = screen.getAllByText(/Title:/i);
+  expect(linkElement.length).toBe(10);
+});
+
+// testing number of description labels
+test('renders App Component and checks if count of description labels are accurate', async () => {
+  render(<App />);
+  const linkElement = screen.getAllByText(/Description:/i);
   expect(linkElement.length).toBe(10);
 });
