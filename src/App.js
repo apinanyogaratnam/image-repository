@@ -37,7 +37,6 @@ function App() {
             <form onSubmit={onSubmit}>
                 <input className="search-box" type="text" value={search} placeholder="Search..." onChange={(e) => setSearch(e.target.value)} />
                 <input type="submit" value="Submit" />
-                <button onClick={() => {setLiveData(data)}}>Reset</button>
             </form>
             <br/>
             {liveData.map(item => {
