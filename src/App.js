@@ -9,6 +9,7 @@ function App() {
             <h1>Image Repository</h1>
             <form>
                 <input className="search-box" type="text" placeholder="Search..." />
+                <input type="submit" value="Submit" />
             </form>
             <br/>
             {data.map(item => {
