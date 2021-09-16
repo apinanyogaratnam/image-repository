@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
-import { shallow } from 'enzyme';
 
 // testing title says Image Repository
 test('renders learn react link', () => {
