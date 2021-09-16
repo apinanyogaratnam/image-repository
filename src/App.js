@@ -13,7 +13,6 @@ function App() {
 
     const onSubmit = (e)  => {
         e.preventDefault();
-        console.log(search);
         
         if (!search) {
             alert("cannot leave search box blank");
