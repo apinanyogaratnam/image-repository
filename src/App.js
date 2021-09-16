@@ -14,7 +14,7 @@ function App() {
         e.preventDefault();
         
         if (!search) {
-            alert("cannot leave search box blank");
+            setLiveData(data);
             return;
         }
 
