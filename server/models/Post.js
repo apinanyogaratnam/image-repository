@@ -1,0 +1,20 @@
+import mongoose from 'mongoose';
+
+const postSchema = new mongoose.Schema({
+    file_name: {
+        type: String,
+        required: true
+    },
+    id: {
+        type: int,
+        required: true
+    },
+    name: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
+    }
+});
