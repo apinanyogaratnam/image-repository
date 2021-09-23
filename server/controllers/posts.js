@@ -6,6 +6,6 @@ export const getImages = (req, res) => {
         res.json(images);
     }
     catch (error) {
-        res.json({ message: error);
+        res.json({ message: error});
     }
 };
