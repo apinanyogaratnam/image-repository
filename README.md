@@ -18,3 +18,4 @@ search box will result in all the images appearing again.
 
 # Images of the project
 ![image of front page](example.png)
+!image of search page](example1.png)
