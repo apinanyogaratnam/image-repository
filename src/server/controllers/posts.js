@@ -1,6 +1,6 @@
 import Post from '../models/Post.js';
 
-export const getImages = (req, res) => {
+export const getImages = async (req, res) => {
     try {
         const images = await Post.find();
         res.json(images);
