@@ -15,3 +15,6 @@ search box will result in all the images appearing again.
 
 # How to test
 1. run `npm test`
+
+# Images of the project
+![image of front page](example.png)
