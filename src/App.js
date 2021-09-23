@@ -1,6 +1,6 @@
 import './App.css';
 import data from './data.json';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import express from 'express';
 // import bodyParser from 'body-parser';
 // import mongoose from 'mongoose';
